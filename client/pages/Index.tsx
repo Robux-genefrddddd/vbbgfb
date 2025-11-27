@@ -108,7 +108,7 @@ export default function Index() {
 
   return (
     <div className="flex h-screen bg-background">
-      {/* Sidebar */}
+      {/* Sidebar - Hidden by default, opens as drawer on hamburger click */}
       <Sidebar
         isOpen={sidebarOpen}
         onClose={() => setSidebarOpen(false)}
@@ -116,7 +116,7 @@ export default function Index() {
         onConversationSelect={setActiveConversationId}
       />
 
-      {/* Main Content */}
+      {/* Main Content - Full width */}
       <div className="flex-1 flex flex-col">
         {/* Header with Menu Button */}
         <div className="border-b border-white/20 px-4 md:px-6 py-4 backdrop-blur-md flex items-center justify-between bg-gradient-to-r from-background via-background/98 to-background/95 shadow-lg shadow-white/5">
