@@ -181,9 +181,9 @@ export function ChatArea({ conversationId }: ChatAreaProps) {
   };
 
   return (
-    <div id="chat-area" className="flex-1 flex flex-col bg-background">
+    <div id="chat-area" className="flex-1 flex flex-col bg-gradient-to-b from-background via-background to-background/95">
       {/* Main Content Area */}
-      <div className="flex-1 overflow-y-auto flex flex-col p-6 animate-fadeIn">
+      <div className="flex-1 overflow-y-auto flex flex-col px-8 py-6 animate-fadeIn">
         {!conversationId ? (
           <div className="flex-1 flex items-center justify-center">
             <div className="text-center">
