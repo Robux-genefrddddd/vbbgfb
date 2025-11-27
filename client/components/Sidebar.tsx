@@ -253,43 +253,43 @@ export function Sidebar({
                     <MoreVertical size={16} />
                   </button>
                 </PopoverTrigger>
-              <PopoverContent className="w-40 p-2 bg-card border-2 border-white rounded-xl">
-                <div className="space-y-1">
-                  <button
-                    onClick={() => {
-                      setIsSettingsOpen(true);
-                      setIsMenuOpen(false);
-                    }}
-                    className="w-full text-left px-3 py-2 rounded-lg text-sm text-foreground/70 hover:text-foreground hover:bg-white/10 transition-colors"
-                  >
-                    Paramètres
-                  </button>
-                  <button
-                    onClick={() => {
-                      setIsHelpOpen(true);
-                      setIsMenuOpen(false);
-                    }}
-                    className="w-full text-left px-3 py-2 rounded-lg text-sm text-foreground/70 hover:text-foreground hover:bg-white/10 transition-colors"
-                  >
-                    Aide
-                  </button>
-                  {userData?.isAdmin && (
-                    <>
-                      <div className="h-px bg-white/10 my-1" />
-                      <button
-                        onClick={() => {
-                          navigate("/admin");
-                          setIsMenuOpen(false);
-                        }}
-                        className="w-full text-left px-3 py-2 rounded-lg text-sm text-white font-semibold hover:bg-white/10 transition-colors"
-                      >
-                        Panneau Admin
-                      </button>
-                    </>
-                  )}
-                </div>
-              </PopoverContent>
-            </Popover>
+                <PopoverContent className="w-40 p-2 bg-card border-2 border-white rounded-xl">
+                  <div className="space-y-1">
+                    <button
+                      onClick={() => {
+                        setIsSettingsOpen(true);
+                        setIsMenuOpen(false);
+                      }}
+                      className="w-full text-left px-3 py-2 rounded-lg text-sm text-foreground/70 hover:text-foreground hover:bg-white/10 transition-colors"
+                    >
+                      Paramètres
+                    </button>
+                    <button
+                      onClick={() => {
+                        setIsHelpOpen(true);
+                        setIsMenuOpen(false);
+                      }}
+                      className="w-full text-left px-3 py-2 rounded-lg text-sm text-foreground/70 hover:text-foreground hover:bg-white/10 transition-colors"
+                    >
+                      Aide
+                    </button>
+                    {userData?.isAdmin && (
+                      <>
+                        <div className="h-px bg-white/10 my-1" />
+                        <button
+                          onClick={() => {
+                            navigate("/admin");
+                            setIsMenuOpen(false);
+                          }}
+                          className="w-full text-left px-3 py-2 rounded-lg text-sm text-white font-semibold hover:bg-white/10 transition-colors"
+                        >
+                          Panneau Admin
+                        </button>
+                      </>
+                    )}
+                  </div>
+                </PopoverContent>
+              </Popover>
             </div>
           </div>
           <p className="text-xs text-foreground/50 truncate hidden sm:block">
